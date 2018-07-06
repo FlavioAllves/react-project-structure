@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { connect } from 'react-redux'
-import CSSModules from 'react-css-modules'
 /* eslint-disable import/no-webpack-loader-syntax, import/no-unresolved */
 import '!style-loader!css-loader!bootstrap/dist/css/bootstrap-grid.css'
 import '!style-loader!css-loader!react-table/react-table.css'
@@ -9,7 +8,6 @@ import '!style-loader!css-loader!react-table/react-table.css'
 import Routes from './router'
 import layout from './styles/layout.scss'
 
-@CSSModules(layout)
 class _App extends Component {
   componentDidMount() {
     console.log('working...')
@@ -17,8 +15,8 @@ class _App extends Component {
   render() {
     return (
       <Router>
-        <div styleName="viabilidade">
-          <div styleName="content">
+        <div className={layout.index}>
+          <div className={layout.content}>
             <Routes />
           </div>
         </div>

@@ -3,7 +3,7 @@
 @import 'fonts.scss';
 
 body {
-  background: $pale-grey;
+  background: $white;
 }
 
 body,
@@ -14,7 +14,7 @@ textarea {
   font-family: 'Lato', sans-serif;
 }
 
-.viabilidade {
+.index {
   align-items: stretch;
   display: flex;
   flex-direction: column;
@@ -29,7 +29,7 @@ textarea {
 }
 
 .titulo {
-  color: $greyish-brown;
+  color: $white;
   font-size: 36px;
   font-weight: 300;
   margin-bottom: 12px;
