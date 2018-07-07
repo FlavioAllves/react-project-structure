@@ -15,23 +15,11 @@ textarea {
 }
 
 .index {
-  align-items: stretch;
   display: flex;
-  flex-direction: column;
   min-height: 100vh;
+  min-width: 100vw;
 }
 
-.content {
-  align-items: center;
-  display: flex;
-  flex: 1;
-  justify-content: center;
-}
-
-.titulo {
-  color: $white;
-  font-size: 36px;
-  font-weight: 300;
-  margin-bottom: 12px;
-  margin-top: 22px;
+.indexQuiz {
+  background-color: $black;
 }

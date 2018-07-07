@@ -1,17 +1,29 @@
 import React, { Component } from 'react'
-import layout from './quiz.scss'
+import Header from '../components/Header'
+import styleQuiz from './quiz.scss'
 
 class Quiz extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      title: 'StarQuiz',
+      title: 'StarQuiz!',
+      sizeLogo: {
+        lg: 70,
+        md: 50,
+        sm: 40,
+      },
+      time: 120000,
     }
   }
+
   render() {
     return (
-      <div className={layout.container}>
-        <h2 className={layout.title}>{this.state.title}</h2>
+      <div className={`${styleQuiz.container} Grid-cell`}>
+        <Header
+          sizeLogo={this.state.sizeLogo}
+          title={this.state.title}
+          time={this.state.time}
+        />
       </div>
     )
   }
