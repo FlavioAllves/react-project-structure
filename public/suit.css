@@ -4695,3 +4695,19 @@ ol, ul {
 .Grid-cell--center {
   margin: 0 auto;
 }
+
+.ui.secondary.menu .item {
+  color: #fff;
+}
+
+.ui.secondary.pointing.menu a.item:hover {
+  color: #fff;
+}
+
+.ui.menu .yellow.active.item, .ui.yellow.menu .active.item {
+    outline: none;
+}
+
+.bold {
+  font-weight: bold;
+}

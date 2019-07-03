@@ -12,7 +12,7 @@ class CountDown extends Component {
     }
   }
 
-  // Stop game when the time done.
+  // Stop game when the time is up.
   handleTimeIsUp = () => {
     /* eslint-disable */
     console.log('Your time is over !!!!!')

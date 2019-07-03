@@ -2,8 +2,14 @@
 @import '../styles/reset.scss';
 @import '../styles/fonts.scss';
 
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: $black;
+}
+
 .container {
-  max-width: 1024px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 15px 15px 0;
 }

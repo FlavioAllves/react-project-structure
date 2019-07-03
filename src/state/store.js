@@ -9,7 +9,7 @@ const Config = process.env
 
 /* eslint-disable no-unused-vars */
 const clients = {
-  mock: {
+  default: {
     client: axios.create({
       baseURL: Config.REACT_APP_API,
     }),

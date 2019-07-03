@@ -13,11 +13,9 @@ class _App extends Component {
     console.log('working...')
   }
   render() {
-    /* global window */
-    const background = window.location.pathname === '/quiz' ? layout.indexQuiz : ''
     return (
       <Router>
-        <div className={`${layout.index} ${background}`}>
+        <div className={`${layout.index}`}>
           <Routes />
         </div>
       </Router>

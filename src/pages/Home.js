@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types'
+import { Button } from 'semantic-ui-react'
 
 import layout from './home.scss'
 import pathImg from '../images/darh_vader.png'
@@ -27,12 +28,12 @@ class Home extends Component {
         <p className={layout.description}>
           {this.state.description}
         </p>
-        <button
+        <Button
           onClick={this.handleStartQuiz}
           className={layout.btn}
-        >
-          {this.state.btnText}
-        </button>
+          content={this.state.btnText}
+          secondary
+        />
       </div>
     )
   }

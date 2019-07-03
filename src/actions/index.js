@@ -28,7 +28,12 @@ export const example = () => (
 //   },
 // })
 
-export const testando = payload => ({
-  type: types.TEST_DEV,
-  payload,
+export const flavio = payload => ({
+  type: types.TYPE_EXAMPLE,
+  payload: {
+    // client: 'default', // isn't necessary to specify 'default' case
+    request: {
+      url: `${payload}`,
+    },
+  },
 })

@@ -1,0 +1,25 @@
+.main {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem -1rem;
+}
+
+.pagination {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px !important;
+}
+
+.description {
+  width: 100%;
+}
+
+@supports (display: grid) {
+	.main {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+		grid-gap: 2rem;
+	}
+}
